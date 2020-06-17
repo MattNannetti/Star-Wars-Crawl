@@ -1,0 +1,58 @@
+body {
+
+    font-family: sans-serif;
+
+    background-image: url(pictures/stars.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+
+p {
+    font-size: 32px;
+    text-align: center;
+    color: yellow;
+    
+}
+/*
+#myDiv {
+    transform: rotateX(65deg);
+  }
+*/
+@keyframes crawl {
+    0% {
+      top: 0;
+      transform: rotateX(65deg)  translateZ(0);
+    }
+    100% { 
+      top: -6000px;
+      transform: rotateX(65deg) translateZ(-2500px);
+    }
+  }
+
+  #myDiv {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+  }
+
+
+.logo {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    flex: 1;
+}
+
+.text {
+
+    flex: 2;
+}
+
+
